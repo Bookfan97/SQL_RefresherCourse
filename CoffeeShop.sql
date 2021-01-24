@@ -29,4 +29,9 @@ CREATE TABLE orders (
 	FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
 
-show  tables;
+select * from products;
+alter table products
+drop column coffee_origin;
+alter table products
+add column coffee_origin VARCHAR(30);
+show tables;
