@@ -25,3 +25,16 @@ create table pets
 );
 
 show tables;
+
+alter table addresses
+add primary key (id);
+
+alter table addresses
+drop primary key;
+
+describe addresses;
+
+alter table people
+add primary key (id);
+
+describe people;
