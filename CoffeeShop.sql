@@ -35,3 +35,18 @@ drop column coffee_origin;
 alter table products
 add column coffee_origin VARCHAR(30);
 show tables;
+
+insert into products (name, price, coffee_origin)
+values ('Espresso', 2.50, 'Brazil');
+
+insert into products (name, price, coffee_origin)
+values ('Macchiato', 3.00, 'Brazil'), ('Cappuccino', 3.50, 'Costa Rica');
+
+insert into products (name, price, coffee_origin)
+values 
+('Latte', 3.50, 'Indonesia'), 
+('Americano', 3.00, 'Brazil'),
+('Flat White', 3.50, 'Indonesia'),
+('Filter', 3.00, 'India');
+
+select * from products;
