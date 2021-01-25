@@ -45,3 +45,11 @@ foreign key (address_id) REFERENCES addresses(id);
 
 alter table people
 drop foreign key FK_PeopleAddress;
+
+select * from pets;
+
+alter table pets
+add constraint u_species unique (species);
+
+alter table pets
+drop index u_species;
