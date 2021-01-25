@@ -55,3 +55,7 @@ alter table pets
 drop index u_species;
 
 alter table pets change `species` `animal_type` VARCHAR(20);
+
+alter table addresses modify city varchar(30);
+
+alter table addresses modify city char(30);
