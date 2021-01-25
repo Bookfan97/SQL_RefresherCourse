@@ -38,3 +38,10 @@ alter table people
 add primary key (id);
 
 describe people;
+
+alter table people
+add constraint FK_PeopleAddress
+foreign key (address_id) REFERENCES addresses(id); 
+
+alter table people
+drop foreign key FK_PeopleAddress;
