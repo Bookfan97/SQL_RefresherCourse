@@ -53,3 +53,5 @@ add constraint u_species unique (species);
 
 alter table pets
 drop index u_species;
+
+alter table pets change `species` `animal_type` VARCHAR(20);
